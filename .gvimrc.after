@@ -1,11 +1,23 @@
-color Railscasts
-set guifont=Monaco:h12
+syntax enable
+colorscheme solarized
+
+" set guifont=Andale_Mono-Powerline:h14 " Monaco:h12
+set background=dark " [dark | light]
+set guifont=PragmataPro:h14
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/.git/*,.DS_Store,*.log,log/**,vendor/bundle/**,vendor/cache/**
-set list
 set vb
+set list
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
+set guioptions=aAce
+
 autocmd User Rails let b:surround_{char2nr('-')} = "<% \r %>" " displays <% %> correctly
 inoremap jj <ESC>
-set guioptions=aAce
+
+let g:Powerline_theme="skwp"
+let g:Powerline_colorscheme="skwp"
+let g:Powerline_symbols = 'fancy'
+python from powerline.ext.vim import source_plugin; source_plugin();
