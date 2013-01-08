@@ -1,3 +1,4 @@
+source /usr/local/lib/python2.7/site-packages/powerline/ext/vim/source_plugin.vim
 syntax enable
 colorscheme solarized
 
@@ -20,4 +21,4 @@ inoremap jj <ESC>
 let g:Powerline_theme="skwp"
 let g:Powerline_colorscheme="skwp"
 let g:Powerline_symbols = 'fancy'
-python from powerline.ext.vim import source_plugin; source_plugin();
+" python from powerline.ext.vim import source_plugin; source_plugin();
